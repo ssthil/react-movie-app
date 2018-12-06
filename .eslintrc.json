@@ -19,6 +19,7 @@
     "no-useless-constructor": ["error"]
   },
   "globals": {
+    "localStorage": true,
     "document": true,
     "fetch": false
   }
