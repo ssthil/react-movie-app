@@ -3,9 +3,11 @@ import React, { Component } from 'react';
 /** internal component */
 import MovieList from './MovieList';
 
-const MOVIE_API_URL = 'https://api.themoviedb.org/3/';
-const MOVIE_API_URI = 'trending/all/day';
-const API_KEY = '1260ebdbf1855b4b6103abebc3372628';
+/** credential */
+import { MOVIE_API_URL, MOVIE_API_URI } from '../config';
+import { REACT_MOVIE_APP_API_KEY } from '../../credentials';
+
+const API_KEY = REACT_MOVIE_APP_API_KEY;
 
 class TrendingMovies extends Component {
   constructor(props) {
