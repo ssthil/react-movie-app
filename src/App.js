@@ -3,9 +3,9 @@ import { Route, Switch } from 'react-router-dom';
 
 /** internal component */
 import Header from './components/Header';
-import TrendingMovies from './components/TrendingMovies';
-import PopularMovies from './components/PopularMovies';
-import TopRatedMovies from './components/TopRatedMovies';
+import TrendingMovies from './components/Movies/Trending';
+import PopularMovies from './components/Movies/Popular';
+import TopRatedMovies from './components/Movies/TopRated';
 
 class App extends Component {
   render() {

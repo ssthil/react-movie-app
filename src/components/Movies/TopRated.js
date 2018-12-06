@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 /** internal component */
-import MovieList from './MovieList';
+import MovieList from '../MovieList';
 /** credential */
-import { MOVIE_API_URL, MOVIE_API_URI } from '../config';
-import { REACT_MOVIE_APP_API_KEY } from '../../credentials';
+import { MOVIE_API_URL, MOVIE_API_URI } from '../../config';
+import { REACT_MOVIE_APP_API_KEY } from '../../../credentials';
 
 const API_KEY = REACT_MOVIE_APP_API_KEY;
 
