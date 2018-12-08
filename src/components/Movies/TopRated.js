@@ -16,7 +16,7 @@ class TopRatedMovies extends Component {
   }
 
   componentDidMount() {
-    fetch(`${MOVIE_API_URL}${MOVIE_API_URI}?api_key=${API_KEY}`)
+    fetch(`${MOVIE_API_URL}${MOVIE_API_URI.top_rated}?api_key=${API_KEY}`)
       .then(response => response.json())
       .then(data =>
         this.setState({

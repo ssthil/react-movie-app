@@ -18,7 +18,7 @@ class TrendingMovies extends Component {
   }
 
   componentDidMount() {
-    fetch(`${MOVIE_API_URL}${MOVIE_API_URI}?api_key=${API_KEY}`)
+    fetch(`${MOVIE_API_URL}${MOVIE_API_URI.trending}?api_key=${API_KEY}`)
       .then(response => response.json())
       .then(data =>
         this.setState({

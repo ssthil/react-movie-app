@@ -3,6 +3,10 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+.navbar-brand {
+  font-family: 'Titillium Web', sans-serif;
+  color: #fff;
+}
 
 .fixed-card-height {
     margin: 5px;
@@ -11,4 +15,87 @@ body {
 .bg-custom {
     background-color: #009688 !important;
     color: #fff;
+}
+
+li.nav-item{
+  margin: 0 10px;
+  border-radius: 3px;
+  background: rgba(33, 138, 128, 0.6);
+  border: 1px solid #218180;
+}
+
+.navbar-nav li.nav-item a.nav-link{
+  padding: 3px 12px;
+  color: #cae7e1;
+  font-size: 14px;
+}
+
+.navbar-nav li.nav-item a.nav-link:hover{
+  color: #f6f8f8;
+}
+.navbar-nav li.nav-item a.nav-link.selected{
+  color: #2fefbf;
+}
+
+/** modal window */
+.modal-dialog {
+  max-width: 700px;
+}
+.modal-body {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+}
+.img-section {
+  align-content: flex-start;
+}
+
+.img-section img {
+  width: auto;
+}
+.content-section {
+  align-content: flex-end;
+  padding: 0 10px 0 20px;
+}
+
+.form-control{
+  padding: .37rem .5rem;
+  border: 0px solid #ced4da;
+}
+.form-inline .form-control, .form-inline .btn {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  border-radius: 3px;
+}
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  li.nav-item{
+    margin:  0;
+  }
+  .form-inline{
+    margin-top: 10px;
+  }
+  .modal-dialog {
+    max-width: 500px;
+  }
+  .modal-body {
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+  }
+  .img-section {
+    align-content: flex-start;
+  }
+
+  .img-section img {
+    width: 100%;
+  }
+  .content-section {
+    align-content: flex-end;
+  }
 }
