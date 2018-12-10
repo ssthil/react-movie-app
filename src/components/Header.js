@@ -16,7 +16,8 @@ class Header extends Component {
   onSubmit = event => {
     event.preventDefault();
     swal({
-      text:`Searched movie is: ${this.state.query} and this functionality would be implemented yet`,
+      title: `Searched movie is: ${this.state.query}`,
+      text: 'This functionality would be implemented in the next release',
       icon: 'success',
       button: 'Thank you!'
     });
