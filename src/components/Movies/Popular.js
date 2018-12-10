@@ -16,6 +16,15 @@ class PopularMovies extends Component {
     };
   }
 
+  filterList(event){
+    var updatedList = this.state.initialItems;
+    updatedList = updatedList.filter(function(item){
+      return item.toLowerCase().search(
+        event.target.value.toLowerCase()) !== -1;
+    });
+    this.setState({items: updatedList});
+  }
+
   componentDidMount() {
     fetch(`${MOVIE_API_URL}${MOVIE_API_URI.popular}?api_key=${API_KEY}`)
       .then(response => response.json())
