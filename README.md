@@ -1,7 +1,9 @@
 
-# Movie app using react, themoviedb, bootstrap 4, material-ui and sweetalert
+# React Movie App
 
-This is a very basic responsive app using React with webpack 4, bootstrap 4 and latest babel config.
+### Using react, themoviedb, bootstrap 4, material-ui and sweetalert
+
+This is a very basic responsive app using React with webpack 4, bootstrap 4,themoviedb, material-ui and latest babel config.
 
 ## Project description
 Used stacks are ```React + webpack 4 +  Bootstrap 4``
